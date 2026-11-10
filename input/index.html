@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Input Sekolah</title></head>
+<body>
+<h2>Form Input Sekolah</h2>
+
+<form action="input.php" method="post">
+    Nama Sekolah:<br>
+    <input name="nama_sekolah" maxlength="150" required><br>
+    NPSN:<br>
+    <input name="npsn" maxlength="8" pattern="[0-9]{8}" title="Isi 8 digit NPSN" required><br>
+    Jenjang:<br>
+    <input name="jenjang" maxlength="10" placeholder="SD, SMP, TK" required><br>
+    Status:<br>
+    <input name="status" maxlength="10" placeholder="Negeri atau Swasta" required><br>
+    Alamat:<br>
+    <input name="alamat" maxlength="255" required><br>
+    Kelurahan:<br>
+    <input name="kelurahan" maxlength="100" required><br>
+    Kecamatan:<br>
+    <input name="kecamatan" maxlength="100" required><br>
+    Longitude:<br>
+    <input type="number" name="longitude" min="-180" max="180" step="any" required><br>
+    Latitude:<br>
+    <input type="number" name="latitude" min="-90" max="90" step="any" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<a href="../index.php">Kembali</a>
+</body>
+</html>
